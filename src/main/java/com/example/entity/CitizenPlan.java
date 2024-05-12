@@ -18,7 +18,7 @@ public class CitizenPlan {
 	private String email;
 	private Integer phno;
 	private String gender;
-	private Integer ssn;
+	private Long ssn;
 	private String planName;
 	private String planStatus;
 	private LocalDate plan_Start_Date;
@@ -26,7 +26,7 @@ public class CitizenPlan {
 	public CitizenPlan() {
 	
 	}
-	public CitizenPlan(String name, String email, Integer phno, String gender, Integer ssn, String planName,
+	public CitizenPlan(String name, String email, Integer phno, String gender, long ssn, String planName,
 			String planStatus, LocalDate plan_Start_Date, LocalDate plan_End_Date) {
 		
 		this.name = name;
@@ -69,10 +69,10 @@ public class CitizenPlan {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public Integer getSsn() {
+	public Long getSsn() {
 		return ssn;
 	}
-	public void setSsn(Integer ssn) {
+	public void setSsn(Long ssn) {
 		this.ssn = ssn;
 	}
 	public String getPlanName() {
